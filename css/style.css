@@ -1,0 +1,22 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: sans-serif;
+    background-color: #B91450;
+}
+
+.borderbutton{
+    border-color:orange !important;
+}
+
+.background-card{
+    background-color: #808080 !important;
+}
+
+.font-bold{
+    font-weight: bold !important;
+}

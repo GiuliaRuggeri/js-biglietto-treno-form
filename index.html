@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Train Ticket</title>
+</head>
+
+<body>
+    <!-- Form -->
+    <div>
+        <h1 class="text-center mt-3 mb-3 text-white font-bold">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+        <div class="container">
+                <div class="card shadow">
+                    <div class="card-body">
+                        <div class="row justify-content-center">
+                            <div class="col-2 text-center text-danger font-bold">
+                                <label for="namesurname" class="form-label">Nome e Cognome</label>
+                                <div class="input-group">
+                                <input id="namesurname" type="text" placeholder="inserisci il tuo nome e cognome" class="form-control border-danger text-center">    
+                                </div>
+                                
+                            </div>
+                            <div class="col-2 text-center text-danger font-bold"> 
+                                <label for="distance" class="form-label">Km da percorrere</label>
+                                <div class="input-group">
+                                   <input id="distance" type="text" placeholder="inserisci i km da percorrere" class="form-control border-danger text-center">
+                                </div>
+                                
+                            </div>
+                            <div class="col-2 text-center text-danger font-bold">
+                                <label for="age" class="form-label">Fascia d'età</label>
+                                <div class="input-group">
+                                    <select id="age" class="form-select border-danger" aria-label="Default select example">
+                                    <option selected value="minorenne">Minorenne</option>
+                                    <option value="maggiorenne">Maggiorenne</option>
+                                    <option value="over65">Over 65</option>
+                                </select>
+                                </div>
+                            
+                            </div>
+                        </div>
+                        <div class="row text-center justify-content-center">
+                            <div class="col-1 mt-3 font-bold">
+                                <button id="button1" class="p-1 rounded-1 text-danger">Genera</button>
+                            </div>
+                            <div class="col-1 mt-3 font-bold">
+                                <button id="button2" class="p-1 rounded-1 text-danger">Annulla</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+            </div>
+
+        </div>
+    </div>
+    <div>
+        <div class="container">
+            <h1 class="text-center text-white mt-3 mb-3 font-bold">IL TUO BIGLIETTO</h1>
+
+            <div class="card p-2">
+                <div class="card-body">
+                    <h4 class="font-bold">DETTAGLI PASSEGGERI</h4>
+                    <div class="row">
+                        <div class="col-3 border-1 background-card">
+                            <h5 class="mt-2 font-bold">Nome passeggero</h5>
+                            <p id="ticketname" class="font-bold"></p>
+                        </div>
+                        <div class="col-9">
+                            <div class="row border-1 border-dark border">
+                                <div class="col-2">
+                                    <p class="font-bold">Offerta</p>
+                                    <p id="offertype"></p>
+                                </div>
+                                <div class="col-2">
+                                    <p class="font-bold">Carrozza</p>
+                                    <p id="wagonnumber"></p>
+                                </div>
+                                <div class="col-2">
+                                    <p class="font-bold">Codice CP</p>
+                                    <p id="cpcode"></p>
+                                </div>
+                                <div class="col-2">
+                                    <p class="font-bold">Costo biglietto</p>
+                                    <p id="ticketprice"></p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    </div>
+
+
+
+
+
+
+    <script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>
